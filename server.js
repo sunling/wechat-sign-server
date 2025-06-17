@@ -6,6 +6,9 @@ const app = express();
 const APPID = process.env.WECHAT_APPID;
 const APPSECRET = process.env.WECHAT_APPSECRET;
 
+console.log('WECHAT_APPID:', APPID);
+console.log('WECHAT_APPSECRET:', APPSECRET);
+
 let accessTokenCache = { token: null, expiresAt: 0 };
 let jsapiTicketCache = { ticket: null, expiresAt: 0 };
 
